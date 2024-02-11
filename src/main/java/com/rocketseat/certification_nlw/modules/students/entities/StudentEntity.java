@@ -35,7 +35,7 @@ public class StudentEntity {
 
     @OneToMany(mappedBy = "studentEntity")
     @JsonBackReference
-    private List<CertificationStudentEntity> CertificationStudentEntity;
+    private List<CertificationStudentEntity> certificationStudentEntity;
 
     @CreationTimestamp
     private LocalDateTime createdAt;

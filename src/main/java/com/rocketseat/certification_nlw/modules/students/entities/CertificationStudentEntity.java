@@ -46,6 +46,7 @@ public class CertificationStudentEntity {
 
     @ManyToOne
     @JoinColumn(name = "student_id", insertable = false, updatable = false)
+
     private StudentEntity studentEntity;
 
     @OneToMany(cascade = CascadeType.ALL)
